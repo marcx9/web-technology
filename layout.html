@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>DROPX</h1>
+        <nav>
+               <a  href=""> Home</a>
+               <a  href=""> Category</a>
+               <a  href=""> New</a>
+               <a  href=""> Stock</a>
+        </nav>
+    </header>
+    <style>
+
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .parent {
+            background-color:rgb(106, 106, 32); 
+            width: 100%;
+            height: 500px;
+        }
+      
+     
+        .parent .right, .left{
+            width: 50%;
+            float: left;
+           
+        }
+        .left img {
+            width: 100%;
+            height: 500px;
+
+        }
+         @media (max-width:100%){
+            .parent{
+                height: 100%;
+
+            }
+            .parent .right,.left{
+                width: 100%;
+            }   
+         }
+         @media(max-width:400px){
+            .left img{
+                width: 300px;
+                display: block;
+                margin: auto;
+                height: 300px;
+            }
+         }
+
+
+       
+    </style>
+    <div class="parent">
+        <div class="right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, dignissimos quo corporis animi cum autem! Corporis beatae odit, voluptatum unde ullam, fuga, totam tenetur sunt consequuntur minima blanditiis cupiditate recusandae?</p>
+        </div>
+       
+        <div class="left"> 
+            <img src="sneaker" alt="">
+
+        </div>
+    </div>
+    
+</body>
+</html>
