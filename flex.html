@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .flexcontainer{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .parent{
+
+        background-color: rgb(255, 186, 0);
+        height: 100vh;
+    }
+    .parent h1{
+        text-align: center;
+        text-transform: capitalize;
+        padding-top: 70px;
+        padding-bottom: 60px;
+        font-size: 55px;
+        font-weight: 900px;
+    }
+    .child img{
+        height: 500px;
+        width: 480px;
+  
+    }
+    .text {
+        text-align: center;
+    }
+    .text h3{
+        font-size: 30px;
+        padding-bottom: 5px;
+        padding-top: 20px;
+        font-weight: 700px;
+    }
+    .text p{
+        font-size: 20px;
+    }
+    .text h4{
+        font-size: 20px;
+        font-weight: 900;
+        padding-top: 25px;
+    }
+    @media (max-width:1441px){
+        .parent{
+            height: auto;
+        }
+        .flexcontainer{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+
+</style>
+<body>
+    <div class="parent">
+        <h1>Our 2025 Keynote Speakers</h1>
+        <div class="flexcontainer">
+
+        
+        <div class="child">
+            <img src="flex.jpeg" alt="mode11">
+        <div class="text">
+            <h3>Leslie Boatwright</h3>
+            <p> Head of Marketing</p>
+            <p> The Hobbibox</p>
+            <h4>September 16</h4>
+        </div>
+        </div>
+        <div class="child">
+            <img src="flexx.jpeg" alt="mode12">
+        <div class="text">
+            <h3>Nicholas Newark</h3>
+            <p> Director of Design</p>
+            <p> Studio Rallia</p>
+            <h4>September 17</h4>
+        </div>
+
+        </div>
+        <div class="child">
+            <img src="flexxx.webp" alt="mode13">
+        <div class="text">
+            <h3>Kin Gyun</h3>
+            <p> Founder and CEO</p>
+            <p> The Treasurebox Online</p>
+            <h4>September 18</h4>
+
+        </div>
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>
